@@ -288,7 +288,7 @@ public class SceneLoader {
 	
 	public void setRotationX(float rotationX) {
 		for (Object3DData data : this.objects) {
-			data.setRotation(new float[] {rotationX, 0.0f, 0.0f});
+			data.setRotation(new float[] {rotationX, data.getRotationX(), data.getRotationY()});
 		}
 	}
 
