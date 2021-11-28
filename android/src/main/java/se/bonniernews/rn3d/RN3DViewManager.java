@@ -59,6 +59,11 @@ class RN3DViewManager extends ViewGroupManager<RN3DView> {
   public void setScale(final RN3DView view, final float scale) {
     view.setScale(scale);
   }
+  
+  @ReactProp(name = "rotationX")
+  public void setRotationX(final RN3DView view, final float x) {
+    view.setRotationX(x);
+  }
 
   @ReactProp(name = "autoPlayAnimations")
   public void setAutoPlayAnimations(final RN3DView view, final boolean autoPlay) {
