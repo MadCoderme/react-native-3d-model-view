@@ -95,6 +95,11 @@ public class ModelSurfaceView extends GLSurfaceView {
 		this.scale = scale;
 		this.scene.setScale(scale);
 	}
+	
+	public void setRotationX(float x) {
+		this.scale = scale;
+		this.scene.setRotationX(x);
+	}
 
 	public void setPlay(boolean play) {
 		if (this.scene.getAnimator() != null) {
