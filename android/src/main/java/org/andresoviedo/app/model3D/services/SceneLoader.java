@@ -285,6 +285,12 @@ public class SceneLoader {
 			data.setScale(new float[] {scale, scale, scale});
 		}
 	}
+	
+	public void setRotationX(float rotationX) {
+		for (Object3DData data : this.objects) {
+			data.setRotation(new float[] {rotationX, 0.0f, 0.0f});
+		}
+	}
 
 	public Animator getAnimator() {
 		return this.animator;
